@@ -146,6 +146,32 @@
 
   footer{padding:34px 0;text-align:center;color:var(--muted);font-size:.83rem;border-top:1px solid var(--line)}
 
+  /* ---------- SECTION IA ---------- */
+  .ai-wrap{
+    background:linear-gradient(135deg,rgba(139,92,246,.1),rgba(34,211,238,.05));
+    border:1px solid rgba(139,92,246,.3);border-radius:19px;padding:31px;
+  }
+  .ai-tag{
+    display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:1.1px;text-transform:uppercase;
+    color:#c4b5fd;background:rgba(139,92,246,.15);border:1px solid rgba(139,92,246,.4);
+    padding:5px 13px;border-radius:99px;margin-bottom:15px;
+  }
+  .ai-wrap h3{font-size:clamp(1.15rem,2.8vw,1.42rem);margin-bottom:11px}
+  .ai-wrap > p{color:var(--muted);margin-bottom:21px;max-width:660px}
+  .ai-grid{display:grid;gap:13px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-bottom:22px}
+  .ai-item{
+    background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:12px;padding:15px 17px;
+    display:flex;gap:12px;align-items:flex-start;transition:.22s;
+  }
+  .ai-item:hover{border-color:rgba(139,92,246,.5);transform:translateY(-2px)}
+  .ai-item .em{font-size:1.3rem;line-height:1}
+  .ai-item b{display:block;font-size:.92rem;margin-bottom:3px}
+  .ai-item span{font-size:.85rem;color:var(--muted)}
+  .ai-quote{
+    font-style:italic;color:#dcd6ff;border-left:3px solid rgba(139,92,246,.6);
+    padding-left:15px;margin-top:19px;font-size:.95rem;
+  }
+
   /* reveal */
   .rv{opacity:0;transform:translateY(22px);transition:.65s cubic-bezier(.2,.7,.3,1)}
   .rv.in{opacity:1;transform:none}
@@ -158,6 +184,7 @@
     <div class="brand">🛡️ Astoiyous <span>Hassani</span></div>
     <div class="navlinks">
       <a href="#projet">Mon projet</a>
+      <a href="#ia">Intelligence artificielle</a>
       <a href="#competences">Compétences</a>
       <a href="#parcours">Parcours</a>
       <a href="#contact">Contact</a>
@@ -217,6 +244,58 @@
         <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
         Visiter le site (en ligne)
       </a>
+    </div>
+  </div>
+</section>
+
+<section id="ia">
+  <div class="wrap">
+    <div class="kicker rv" style="color:#a78bfa">Compétence moderne</div>
+    <h2 class="rv">Je travaille avec l'intelligence artificielle</h2>
+    <p class="sub rv">Je ne me contente pas d'utiliser un ordinateur : je sais <strong>piloter une IA</strong>
+      pour produire un résultat concret et vérifiable.</p>
+
+    <div class="ai-wrap rv">
+      <span class="ai-tag">🤖 Pilotage d'IA</span>
+      <h3>Ce que je sais faire avec l'IA</h3>
+      <p>L'intelligence artificielle n'écrit pas à ma place : c'est moi qui décide, qui oriente,
+        qui vérifie et qui corrige. Voici concrètement ce que je maîtrise.</p>
+
+      <div class="ai-grid">
+        <div class="ai-item">
+          <span class="em">🎯</span>
+          <div><b>Concevoir et diriger</b>
+            <span>Je sais décrire précisément ce que je veux obtenir : structure, contenu, style, publics visés.</span>
+          </div>
+        </div>
+        <div class="ai-item">
+          <span class="em">🔍</span>
+          <div><b>Vérifier et corriger</b>
+            <span>Je contrôle le résultat, je repère les erreurs, je fais corriger et j'itère jusqu'au bon rendu.</span>
+          </div>
+        </div>
+        <div class="ai-item">
+          <span class="em">🌐</span>
+          <div><b>Publier en ligne</b>
+            <span>Je sais mettre un site en ligne gratuitement et le rendre accessible depuis n'importe quel appareil.</span>
+          </div>
+        </div>
+        <div class="ai-item">
+          <span class="em">🔧</span>
+          <div><b>Comprendre la technique</b>
+            <span>Je sais ce qui se passe derrière : hébergement, serveur, réseaux, fichiers, mise à jour.</span>
+          </div>
+        </div>
+      </div>
+
+      <p style="color:var(--muted);margin-bottom:9px"><strong style="color:var(--txt)">Deux réalisations concrètes :</strong></p>
+      <ul class="feats">
+        <li>Mon <strong>site de révision TSRS (27 modules)</strong> — conçu et mis en ligne par moi</li>
+        <li>Ce <strong>portfolio</strong> — créé en pilotant un agent IA, de la conception à la publication</li>
+      </ul>
+
+      <p class="ai-quote">« L'IA ne remplace pas le technicien : elle lui donne des superpouvoirs.<br>
+        Je sais déjà m'en servir. »</p>
     </div>
   </div>
 </section>
