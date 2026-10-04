@@ -68,6 +68,22 @@
   .quick{display:flex;flex-wrap:wrap;gap:20px;font-size:.88rem;color:var(--muted)}
   .quick div{display:flex;align-items:center;gap:7px}
 
+  /* ---------- HERO 2 COLONNES + PHOTO ---------- */
+  .hero-flex{display:flex;align-items:center;gap:46px;flex-wrap:wrap}
+  .hero-txt{flex:1;min-width:290px}
+  .hero-photo{flex-shrink:0;margin:0 auto}
+  .hero-photo img{
+    width:236px;height:236px;border-radius:50%;object-fit:cover;display:block;
+    border:4px solid rgba(34,211,238,.45);
+    box-shadow:0 18px 50px rgba(34,211,238,.22), 0 0 0 10px rgba(34,211,238,.05);
+  }
+  @media(max-width:780px){
+    .hero-flex{flex-direction:column-reverse;gap:28px;text-align:center}
+    .hero-photo img{width:168px;height:168px}
+    .btns,.quick{justify-content:center}
+    .lead{margin-left:auto;margin-right:auto}
+  }
+
   /* ---------- SECTIONS ---------- */
   section{padding:52px 0;border-top:1px solid var(--line)}
   .kicker{font-size:.76rem;font-weight:800;letter-spacing:2.2px;text-transform:uppercase;color:var(--cyan);margin-bottom:11px}
@@ -194,28 +210,39 @@
 
 <header>
   <div class="wrap">
-    <div class="badge"><span class="dot"></span> Disponible pour une alternance — Mayotte</div>
-    <h1>Technicien <em>Systèmes, Réseaux<br>&amp; Sécurité</em> en formation</h1>
-    <p class="lead">
-      Je m'appelle <strong>Astoïyous Hassani Moustoifa</strong>, j'ai 19 ans et je prépare le
-      <strong>BTS TSRS</strong> à Mayotte. Passionné d'informatique, j'ai déjà conçu
-      <strong>mon propre site de révision en 27 modules</strong> couvrant tout le programme.
-      Je cherche une entreprise pour mon alternance.
-    </p>
-    <div class="btns">
-      <a class="btn btn-main" href="#projet">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        Voir mon projet
-      </a>
-      <a class="btn btn-ghost" href="#contact">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 4h16v16H4z"/><path d="m4 6 8 6 8-6"/></svg>
-        Me contacter
-      </a>
-    </div>
-    <div class="quick">
-      <div>📍 Handrema, Bandraboua (97650)</div>
-      <div>🚗 Permis B — mobile</div>
-      <div>🎓 Bac STL 2024 → BTS TSRS</div>
+    <div class="hero-flex">
+      <div class="hero-txt">
+        <div class="badge"><span class="dot"></span> Disponible pour une alternance — Mayotte</div>
+        <h1>Technicien <em>Systèmes, Réseaux<br>&amp; Sécurité</em> en formation</h1>
+        <p class="lead">
+          Je m'appelle <strong>Astoïyous Hassani Moustoifa</strong>, j'ai 19 ans et je prépare le
+          <strong>BTS TSRS</strong> à Mayotte. Passionné d'informatique, j'ai déjà conçu
+          <strong>mon propre site de révision en 27 modules</strong> couvrant tout le programme.
+          Je cherche une entreprise pour mon alternance.
+        </p>
+        <div class="btns">
+          <a class="btn btn-main" href="#projet">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            Voir mon projet
+          </a>
+          <a class="btn btn-ghost" href="CV_Astoiyous_Hassani_Moustoifa.pdf" download>
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            Télécharger mon CV
+          </a>
+          <a class="btn btn-ghost" href="#contact">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 4h16v16H4z"/><path d="m4 6 8 6 8-6"/></svg>
+            Me contacter
+          </a>
+        </div>
+        <div class="quick">
+          <div>📍 Handrema, Bandraboua (97650)</div>
+          <div>🚗 Permis B — mobile</div>
+          <div>🎓 Bac STL 2024 → BTS TSRS</div>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="photo.jpg" alt="Astoïyous Hassani Moustoifa" width="236" height="236">
+      </div>
     </div>
   </div>
 </header>
